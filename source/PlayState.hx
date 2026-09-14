@@ -1353,7 +1353,7 @@ class PlayState extends MusicBeatState
 		practiceDieIcon = new HealthIcon('bf-old', false);
 		practiceDieIcon.y = healthBar.y - (practiceDieIcon.height / 2);
 		practiceDieIcon.x = healthBar.x - 130;
-		practiceDieIcon.animation.curAnim.curFrame = 1;
+		// practiceDieIcon.animation.curAnim.curFrame = 1;
 		add(practiceDieIcon);
 
 		strumLineNotes.cameras = [camHUD];
@@ -2356,7 +2356,7 @@ class PlayState extends MusicBeatState
 				healthTxt.setFormat("assets/fonts/vcr.ttf", 20, FlxColor.RED, RIGHT);
 			}
 			else {
-				iconP1.animation.curAnim.curFrame = 0;
+				// iconP1.animation.curAnim.curFrame = 0;
 				healthTxt.setFormat("assets/fonts/vcr.ttf", 20, FlxColor.WHITE, RIGHT);
 			}
 
@@ -2368,7 +2368,7 @@ class PlayState extends MusicBeatState
 		if (healthBar.percent > 80)
 			iconP2.animation.curAnim.curFrame = 1;
 		else
-			iconP2.animation.curAnim.curFrame = 0;
+			// iconP2.animation.curAnim.curFrame = 0;
 
 		/* if (FlxG.keys.justPressed.NINE)
 			FlxG.switchState(new Charting()); */
